@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(9, 59, 78);
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(9, 94, 128);
+    position: sticky;
+}
+
+.navbar h3{
+    color: rgb(207, 175, 32);
+    padding-left: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+    font-weight: 30;
+}
+
+.navbar ul li.active{
+    color: bisque;
+}
+
+.navbar ul li.active a{
+    color: rgb(207, 175, 32);
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(207, 175, 32);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.head{
+    color:rgb(207, 175, 32);
+    top: 30%;
+    position: absolute;
+    padding-left: 60px;
+}
+
+.container{
+    background-color: rgb(3, 30, 41);
+    top: 42%;
+    position: absolute;
+    border-radius: 5px;
+    width: 85%;
+    margin-left: 60px;
+}
+
+.container h3{
+    color: rgb(207, 175, 32);
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.container h4{
+    color: bisque;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}

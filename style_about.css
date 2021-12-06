@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.banner{
+    width: 100%;
+    height: 170vh;
+    background-color: rgb(9, 59, 78);
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(9, 94, 128);
+    position: sticky;
+    
+}
+
+.navbar h3{
+    color: rgb(207, 175, 32);
+    padding-left: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+    font-weight: 30;
+}
+
+.navbar ul li.active{
+    color: bisque;
+}
+
+.navbar ul li.active a{
+    color: rgb(207, 175, 32);
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(207, 175, 32);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.head{
+    color:rgb(207, 175, 32);
+    top: 30%;
+    position: absolute;
+    padding-left: 60px;
+}
+
+.container{
+    background-color: rgb(3, 30, 41);
+    top: 42%;
+    position: absolute;
+    border-radius: 5px;
+    width: 78%;
+    margin-left: 85px;
+    padding: 5px 10px;
+}
+
+.container h4{
+    color: bisque;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.head1{
+    color:rgb(207, 175, 32);
+    top: 63%;
+    position: absolute;
+    padding-left: 60px;
+}
+
+.container1{
+    width: 80%;
+    background-color: rgb(3, 30, 41);
+    top: 70%;
+    position: absolute;
+    margin-left: 60px;
+    border-radius: 8px;
+    margin-left: 85px;
+    margin-top: 25px;
+}
+
+.container1 ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.container1 h3{
+    color: rgb(226, 198, 71);
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+.container1 h5{
+    color: bisque;
+    padding-top: 8px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    font-size: 16px;
+   
+}
+
+.head2{
+    color:rgb(207, 175, 32);
+    top: 139%;
+    position: absolute;
+    padding-left: 60px;
+}
+
+.container2{
+    width: 31%;
+    top: 146%;
+    position: absolute;
+    background-color: rgb(3, 30, 41);
+    margin-left: 60px;
+    border-radius: 8px;
+    margin-left: 85px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 ul li{
+    list-style: none;
+    color: bisque;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 31px;
+    display: inline-flex;
+    justify-content: space-between;
+}

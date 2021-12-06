@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(9, 59, 78);
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(9, 94, 128);
+    position: sticky;
+}
+
+.navbar h3{
+    color: rgb(207, 175, 32);
+    padding-left: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+    font-weight: 30;
+}
+
+.navbar ul li.active{
+    color: bisque;
+}
+
+.navbar ul li.active a{
+    color: rgb(207, 175, 32);
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(207, 175, 32);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 45%;
+    padding-left: 60px;
+    padding-top: 150px;
+
+}
+
+.container .first1{
+    color: bisque;
+    font-size: 60px;
+    padding-top: 50px 0;
+    display: inline-block;
+}
+
+.container .last1{
+    color: rgb(207, 175, 32);
+    font-size: 60px;
+    padding-top: 50px 0;
+    display: inline-block;
+}
+
+.container h2{
+    color: bisque;
+    font-size: 40px;
+}
+
+.container h3{
+    color: bisque;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.button{
+    width: 100%;
+    height: 10%;
+    padding-left: 60px;
+    position: absolute;
+    top: 70%;
+    margin-top: 30px;
+}
+
+.btn{
+    border: 1px solid rgb(207, 175, 32);
+    padding: 10px 30px;
+    color: rgb(207, 175, 32);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px ;
+    transition: 0.8s;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: rgb(207, 175, 32);
+    color:bisque;
+}
