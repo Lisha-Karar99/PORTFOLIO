@@ -206,7 +206,7 @@ body{
         bottom: 0;
     }
     .container{
-        width: 100%;
+        width: 81%;
         height: 45%;
         padding-left: 30px;
         padding-top: 150px;
@@ -239,10 +239,11 @@ body{
         font-size: 20px;
         padding-bottom: 20px;
         margin-bottom: 10px;
+        width: 55%;
     }
     
     .button{
-        width: 100%;
+        width: 90%;
         height: 10%;
         padding-left: 30px;
         position: absolute;
