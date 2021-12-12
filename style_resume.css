@@ -273,3 +273,30 @@ p{
 .project ul li{
     list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+    .container{
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        min-height: 1000px;
+        background-color: white;
+        display: inline;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgba(0,0,0,1);
+        margin: 16px;
+    }
+    
+    .container .left{
+        position: relative;
+        background-color: #003147;
+        padding: 25px;
+    }
+
+    .container .right{
+        position: relative;
+        background-color: #fff;
+        padding: 15px;
+    }
+
+}

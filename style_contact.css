@@ -6,53 +6,79 @@
     font-family: Roboto;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
 .banner{
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-color: rgb(9, 59, 78);
     background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
     width: 100%;
-    margin: auto;
-    padding: 18px 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0.5%;
+    height: 50px;
+    z-index: 10;
+    background-color: rgb(9, 94, 128);
+    position: fixed;
+}
+
+.navbar .logo{
+    color: rgb(207, 175, 32);
+    float: left;
+    width: 40%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(9, 94, 128);
-    position: sticky;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.navbar h3{
-    color: rgb(207, 175, 32);
-    padding-left: 30px;
+.navbar .link{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.navbar ul li{
+.navbar .link li{
     list-style: none;
     display: inline-block;
-    margin: 0 30px;
     position: relative;
-    
 }
 
-.navbar ul li a{
+.navbar .link a{
     text-decoration: none;
     color: bisque;
     font-size: 20px;
     font-weight: 30;
+    display: block;
 }
 
-.navbar ul li.active{
+.navbar .link .active{
     color: bisque;
 }
 
-.navbar ul li.active a{
+.navbar .link .active a{
     color: rgb(207, 175, 32);
 }
 
-.navbar ul li::after{
+.navbar .link li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -63,8 +89,29 @@
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after{
+.navbar .link li:hover::after{
     width: 100%;
+}
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+.navbar .icon-burger{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.navbar .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: bisque;
+    margin: 5px;
+    border-radius: 3px;
 }
 
 
@@ -140,4 +187,109 @@
     display: inline;
     padding-right: 20px;
     padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .logo{
+        font-size: 16px;
+        padding-left: 38px;
+    }
+    .navbar .link{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        background-color: rgb(3, 30, 41);
+        right: 0;
+        top: 52px;
+        bottom: 100%;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    .navbar .link a{
+        font-size: 25px;
+    }
+    .navbar .icon-burger{
+        display: block;
+        padding-right: 20px;
+    }
+    .navbar :checked ~ .link{
+        bottom: 0;
+    }
+    .head{
+        color:rgb(207, 175, 32);
+        top: 15%;
+        right: 8%;
+        left: 14%;
+        position: absolute;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: inline;
+        justify-content: center;
+
+    }
+    
+    .head h1{
+        font-size: 25px;
+    }
+    
+    .container{
+        top: 22%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        padding: 0 22px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .container h3{
+        color: bisque;
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+    
+    .head1{
+        color:rgb(207, 175, 32);
+        top: 40%;
+        right: 5%;
+        left: 5%;
+        position: absolute;
+        padding-left: 40px;
+        display: inline;
+    }
+    
+    .head1 h1{
+        font-size: 28px;
+    }
+    
+    .container1{
+        top: 47%;
+        right: 10%;
+        left: 19%;
+        width: 65%;
+        height: 7%;
+        padding-top: 15px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container1 ul li{
+        list-style: none;
+        display: inline;
+    }
+    
+    .container1 ul li .fa{
+        font-size: 40px;
+        color: bisque;
+        display: inline;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    
 }
